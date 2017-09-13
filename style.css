@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Medula+One');
+
+.jumbotron {
+    background-image: url(images/tm-room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.jumbotron h1 {
+    color: #FFE8AA;
+    text-shadow: 3px 3px 2px #552E00;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+.centered-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 75px;
+}
+
+header nav#navigation {
+    background-color: #552E00;
+    border: none;
+    border-radius: 0;
+
+}
+
+header nav#navigation a.navbar-brand {
+    font-size: 3.5em;
+}
+
+header nav#navigation a {
+    color: #FFE8AA;
+}
+
+header nav#navigation ul.navbar-right a {
+    font-size: 2em;
+}
+
+body {
+    padding-top: 50px;
+}
+
+header nav#navigation a,
+h2,
+h1,
+h3 {
+    font-family: "Medula One";
+}
+
+p {
+    font-family: "Lato";
+}
+
+.btn-danger {
+    background-color: #D4826A;
+    border-color: #D4826A;
+    color: #551300;
+
+
+}
+
+.btn-warning {
+    background-color: #D4A46A;
+    border-color: #D4A46A;
+    color: #552E00;
+
+}
+/*nav {*/
+    /*height: 100px;*/
+/*}*/
+
+
+/*********************
+MOOD BOARD
+*************************/
+

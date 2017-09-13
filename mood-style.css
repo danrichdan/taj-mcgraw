@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Medula+One');
+
+.colors {
+    height: 50px;
+    width: 50px;
+}
+
+.color-1 {
+    background-color: #552E00;
+}
+
+.color-2 {
+    background-color: #FFE8AA;
+}
+
+.color-3 {
+    background-color: #D4826A;
+}
+
+.color-4 {
+    background-color: #FFBDAA;
+}
+
+.color-5 {
+    background-color: #D4A46A;
+}
+
+h4.heading-font {
+    font-size: 2.5em;
+}
+
+.heading-font {
+    font-family: "Medula One";
+
+}
+
+.body-font {
+    font-family: Lato;
+    font-size: 1.2em;
+}
+
+.bg-img {
+    height: 200px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+}
+
+.bg-img-1 {
+    background-image: url("images/tm-room.jpg");
+}
+
+.bg-img-2 {
+    background-image: url("images/city-skyline.jpg");
+}
+
+.bg-img-3 {
+    background-image: url("images/wood-bg.jpg");
+}
+
+.panel {
+    margin: 25px 0 50px;
+
+}
