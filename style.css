@@ -1,83 +1,166 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Medula+One');
+/*******************
+BASE STYLES
+********************/
 
-.jumbotron {
-    background-image: url(images/tm-room.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    padding-top: 120px;
-    padding-bottom: 20px;
+img {
+    max-width: 100%;
 }
 
-.jumbotron h1 {
-    color: #FFE8AA;
-    text-shadow: 3px 3px 2px #552E00;
+nav ul li {
+    list-style: none;
+    border-top: 1px dotted;
+    padding: 10px 0;
 }
 
-.navbar {
-    margin-bottom: 0;
-}
-.centered-buttons {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-top: 75px;
+a {
+    text-decoration: none;
 }
 
-header nav#navigation {
-    background-color: #552E00;
-    border: none;
-    border-radius: 0;
-
-}
-
-header nav#navigation a.navbar-brand {
-    font-size: 3.5em;
-}
-
-header nav#navigation a {
+nav a:link {
     color: #FFE8AA;
 }
 
-header nav#navigation ul.navbar-right a {
-    font-size: 2em;
+nav a:visited {
+    color: #FFE8AA;
 }
 
-body {
-    padding-top: 50px;
+/*********FONTS**********/
+@font-face {
+    font-family: Alice;
+    src: url(fonts/alice-regular.ttf);
 }
 
-header nav#navigation a,
-h2,
+@font-face {
+    font-family: Lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+#logo,
 h1,
+h2,
 h3 {
-    font-family: "Medula One";
+    font-family: Alice;
 }
 
-p {
-    font-family: "Lato";
+p,
+li,
+a {
+    font-family: Lato;
 }
 
-.btn-danger {
-    background-color: #D4826A;
-    border-color: #D4826A;
-    color: #551300;
+/*********COLORS**********/
 
+#logo,
+header,
+footer {
+    background-color: #552E00;
+    color: #FFE8AA;
+}
+
+/*********LAYOUT**********/
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+}
+
+/*******************
+HEADER
+********************/
+
+h1 {
+    font-size: 1.25em;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    padding: 0 15px;
+}
+
+.contact-info-header {
+    display: none;
+}
+/*******************
+NAVIGATION
+********************/
+
+.hide-show {
+    display: none;
+}
+
+.responsive {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 100%;
+    background-color: #552E00;
+}
+
+.hamburger-menu-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #FFE8AA;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change.bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change.bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change.bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -5px) ;
+    transform: rotate(45deg) translate(-6px, -5px) ;
+}
+
+/*******************
+HERO SECTION
+********************/
+#hero {
+    background: url(images/tm-room.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: flex-end;
 
 }
 
-.btn-warning {
-    background-color: #D4A46A;
-    border-color: #D4A46A;
-    color: #552E00;
+/*******************
+CONTACT MODAL
+********************/
 
+.close-contact-modal {
+    cursor: pointer;
 }
-/*nav {*/
-    /*height: 100px;*/
-/*}*/
-
-
-/*********************
-MOOD BOARD
-*************************/
 
