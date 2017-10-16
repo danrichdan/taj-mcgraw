@@ -1,13 +1,24 @@
 /*******************
 BASE STYLES
 ********************/
+p {
+    line-height: 1.5;
+}
 
 img {
     max-width: 100%;
 }
 
-nav ul li {
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+li {
     list-style: none;
+}
+
+nav ul li {
     border-top: 1px dotted;
     padding: 10px 0;
 }
@@ -57,6 +68,7 @@ footer {
     color: #FFE8AA;
 }
 
+
 /*********LAYOUT**********/
 
 .container {
@@ -67,6 +79,7 @@ footer {
 footer {
     text-align: center;
     padding: 5px 0;
+    font-size: .75em;
 }
 
 /*******************
@@ -89,6 +102,8 @@ header .container {
 .contact-info-header {
     display: none;
 }
+
+
 /*******************
 NAVIGATION
 ********************/
@@ -105,10 +120,10 @@ NAVIGATION
     right: 0;
     width: 100%;
     background-color: #552E00;
+    z-index: 100;
 }
 
 .hamburger-menu-container {
-    display: inline-block;
     cursor: pointer;
 }
 
@@ -144,17 +159,50 @@ HERO SECTION
 ********************/
 #hero {
     background: url(images/tm-room.jpg) no-repeat;
+    background-position: 50% 50%;
     background-size: cover;
     height: 100vh;
 }
 
 .hero-container {
+    height: 100%;
     display: flex;
     flex-direction: column;
     color: #fff;
-    justify-content: flex-end;
-
+    position: relative;
+    top: 60px;
+    padding: 0 0 0 50px;
 }
+
+.button-area a:link {
+    color: #fff;
+}
+
+.button-area a:visited {
+    color: #fff;
+}
+
+.button-area a {
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-shadow: 0 1px #000;
+}
+
+.button-area a:first-of-type {
+    background-color: #f0ad4e;
+}
+
+.button-area a:last-of-type {
+    background-color: #d9534f;
+}
+
+.button-area a:hover {
+    background-color: #fff;
+    color: #552E00;
+    text-shadow: none;
+}
+
 
 /*******************
 CONTACT MODAL
@@ -164,3 +212,66 @@ CONTACT MODAL
     cursor: pointer;
 }
 
+
+
+/*******************
+ABOUT PAGE, BANDS PAGE
+********************/
+
+#about-page-main-content,
+#bands-page-main-content,
+#equipment-page-main-content {
+    background-color: rgba(255, 216, 170, .7);
+    color: #552E00;
+    padding: 0 15px;
+    font-size: 1.025em;
+}
+
+#about-page-main-content h2:first-of-type,
+#bands-page-main-content h2:first-of-type,
+#equipment-page-main-content h2:first-of-type {
+    margin-top: 0;
+}
+
+#about-page-main-content #about-taj-mcgraw{
+    padding-top: 50px;
+}
+
+#about-page-main-content #options p:last-of-type {
+    margin-bottom: 0;
+}
+
+#about-page-main-content section,
+#bands-page-main-content section,
+#equipment-page-main-content section {
+    padding: 0 0 25px;
+}
+
+#bands-page-main-content h2,
+#equipment-page-main-content h2 {
+    margin-bottom: 40px;
+}
+
+#bands-page-main-content,
+#equipment-page-main-content {
+    padding-top: 30px;
+}
+
+#bands-page-main-content img,
+#equipment-page-main-content img {
+    width: 85%;
+}
+
+/*******************
+EQUIPMENT PAGE GALLERY
+********************/
+
+.img {
+    background-color: orangered;
+    width: 600px;
+    height: 400px;
+}
+
+#equipment-page-main-content img {
+    margin-bottom: 10px;
+}
