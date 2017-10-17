@@ -1,7 +1,10 @@
 $(document).ready(function(){
-    mobileNavigation();
-    openContactModal();
+    applyClickHandlers();
 });
+
+function applyClickHandlers() {
+    mobileNavigation();
+}
 
 //FUNCTION FOR THE HAMBURGER MENU
 function mobileNavigation() {
@@ -14,13 +17,5 @@ function mobileNavigation() {
     });
 };
 
-//FUNCTION TO OPEN THE CONTACT MODAL ON THE HOME PAGE
-function openContactModal() {
-    $(".contact-link").click(function() {
-        $("#contact").toggleClass("hide-show");
-    });
-    $(".close-contact-modal").click(function(){
-        $("#contact").toggleClass("hide-show");
-    });
-};
+
 

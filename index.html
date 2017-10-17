@@ -58,17 +58,27 @@
                 <h2>Recording and Production Studio</h2>
                 <div class="button-area">
                     <a href="bands.html">Bands</a>
-                    <a class="contact-link" href="#contact">Contact</a>
+                    <a id="modalBtn" class="contact-link button" href="#contact">Contact</a>
                 </div>
-                <aside id="contact" class="hide-show">
-                    <div class="contact-modal">
-                        <p class="close-contact-modal">X</p>
-                        <h3>Contact Information</h3>
-                        <p class="close-contact-modal">X</p>
-                        <p>pete@tajmcgraw.com</p>
-                    </div>
-                </aside>
             </div>
+
+            <!--BEGIN MODAL-->
+            <div id="simpleModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="closeBtn">&times;</span>
+                        <h2>Contact Info</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>tajmcgraw@gmail.com</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
+            </div>
+            <!--END MODAL-->
+
         </section>
     </main>
     <!--END MAIN-CONTENT-->
@@ -78,5 +88,6 @@
         <p>&copy;2017 Taj McGraw Studios</p>
     </footer>
     <!--END FOOTER-->
+    <script src="js/modal.js"></script>
 </body>
 </html>
