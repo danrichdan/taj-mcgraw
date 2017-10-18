@@ -11,6 +11,9 @@ img {
 
 ul {
     padding-left: 0;
+}
+
+nav ul {
     margin-bottom: 0;
 }
 
@@ -20,6 +23,17 @@ li {
 
 nav ul li {
     border-top: 1px dotted;
+
+}
+
+nav ul li:last-of-type {
+    border-bottom: 1px solid;
+}
+
+nav ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
     padding: 10px 0;
 }
 
@@ -82,6 +96,26 @@ footer {
     font-size: .75em;
 }
 
+/*********BACK TO TOP BUTTON**********/
+
+.back-to-top-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #FFE8AA;
+    color: #552E00;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+    font-size: 1.5em;
+    box-shadow: 2px 3px 10px black;
+}
 /*******************
 HEADER
 ********************/
@@ -158,7 +192,7 @@ NAVIGATION
 HERO SECTION
 ********************/
 #hero {
-    background: url(images/tm-room.jpg) no-repeat;
+    background: rgba(255, 216, 170, .7) url(images/tm-room-2.jpg) no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     height: 100vh;
@@ -225,6 +259,8 @@ CONTACT MODAL
     width: 70%;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),
     0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
 }
 
 .modal-header h2,
@@ -240,6 +276,11 @@ CONTACT MODAL
 
 .modal-body {
     padding: 10px 20px;
+}
+
+.modal-body p {
+    font-size: 1.2em;
+    color: #AA5239;
 }
 
 .modal-footer {
@@ -261,8 +302,13 @@ CONTACT MODAL
     color: #AA5239;
     text-decoration: none;
     cursor: pointer;
-
 }
+
+@keyframes modalopen{
+    from{opacity: 0}
+    to {opacity: 1}
+}
+
 
 /*******************
 ABOUT PAGE, BANDS PAGE
@@ -316,12 +362,168 @@ ABOUT PAGE, BANDS PAGE
 EQUIPMENT PAGE GALLERY
 ********************/
 
-.img {
-    background-color: orangered;
-    width: 600px;
-    height: 400px;
-}
-
 #equipment-page-main-content img {
     margin-bottom: 10px;
+}
+
+/*******************
+LIGHTBOX OVERLAY
+********************/
+
+#overlay {
+    background: rgba(0,0,0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    display: none;
+    text-align: center;
+    z-index: 2;
+}
+
+#overlay img {
+    margin-top: 35%;
+    width: 85%;
+}
+
+
+
+/*******************
+MEDIA QUERIES
+********************/
+
+@media(min-width: 375px) {
+    #hero h2:first-child {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width: 414px) {
+    header h1 {
+        font-size: 1.75em;
+    }
+    nav ul li a {
+        font-size: 1.2em;
+    }
+    .responsive {
+        top: 55px;
+    }
+    #bands-page-main-content h3{
+        font-size: 1.3em;
+    }
+}
+
+@media(min-width: 768px) {
+    #hero h2:first-child {
+        font-size: 2.25em;
+    }
+    #hero a {
+        font-size: 1.15em;
+    }
+    .hero-container {
+        top: 150px;
+    }
+    #bands-page-main-content img{
+        width: 50%;
+    }
+
+    #imageGallery li {
+        width: 45%;
+    }
+
+    #imageGallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #overlay img {
+        margin-top: 20%;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    #hero h2:first-child {
+        font-size: 2.5em;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.9);
+    }
+
+    #hero a {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+
+    #bands-page-main-content img {
+        width: 40%;
+    }
+
+    #imageGallery li {
+        width: 30%;
+    }
+
+    #overlay img {
+        margin-top: 10%;
+        width: 50%;
+    }
+
+    .modal-content {
+        width: 50%;
+    }
+
+    .hamburger-menu-container {
+        display: none;
+    }
+
+    #my-top-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #my-top-nav li {
+        border: none;
+        margin-left: 20px;
+        text-transform: lowercase;
+    }
+    nav ul {
+        margin-top: 0;
+    }
+    #my-top-nav li a:hover,
+    #my-top-nav li a:focus {
+        color: #D4826A;
+    }
+    #my-top-nav li a:active {
+        color: #FFBDAA;
+    }
+    #hero a:active {
+        background-color: #FFE8AA;
+    }
+    footer {
+        font-size: .9em;
+    }
+    #imageGallery li{
+        text-align: center;
+    }
+    #imageGallery{
+        justify-content: center;
+    }
+    .float-left {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+    .clear {
+        clear: both;
+    }
+    .about {
+        font-size: 1.1em;
+        line-height: 1.6;
+        letter-spacing: 1.1px;
+    }
+    .contact-info-header {
+        display: block;
+        text-align: right;
+    }
+
 }
