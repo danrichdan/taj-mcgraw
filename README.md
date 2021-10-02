@@ -1,2 +1,2 @@
 # taj-mcgraw
-This is a site I'm building for a sound engineer/producer in Seattle
+Website built for a part time sound engineer in Seattle. He uses all analog equipment and wanted a bare bones, simple website.  
