@@ -1,89 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-          content="Taj McGraw Studios is a Recording and Production Studio located in Seattle, Washington which specializes in Analog Recording.  Come in at 11, have a song recorded by 7.">
-    <title>Taj McGraw Studios Home Page | Sound Engineering and Production Studio in Seattle</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Taj McGraw Studios is a Recording and Production Studio located in Seattle, Washington which specializes in Analog Recording.  Come in at 11, have a song recorded by 7."
+    />
+    <title>
+      Taj McGraw Studios Home Page | Sound Engineering and Production Studio in
+      Seattle
+    </title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/script.js"></script>
-</head>
-<body>
-<!--BEGIN HEADER-->
-<header>
-    <div class="container header-container">
+  </head>
+  <body>
+    <!--BEGIN HEADER-->
+    <header>
+      <div class="container header-container">
         <!--LOGO-->
         <div class="left-side-header">
-            <h1><a id="logo" href="index.html">Taj McGraw Studios</a></h1>
+          <h1><a id="logo" href="index.html">Taj McGraw Studios</a></h1>
         </div>
         <!--RIGHT-SIDE HEADER / NAVIGATION AND CONTACT-->
         <div class="right-side-header">
-            <!--CONTACT-->
-            <div class="contact-info-header">
-                <p>Email: test@test.com</p>
+          <!--CONTACT-->
+          <div class="contact-info-header">
+            <p id="headerEmail"></p>
+          </div>
+          <!--NAVIGATION-->
+          <nav>
+            <!--BEGIN HAMBURGER MENU-->
+            <div class="hamburger-menu-container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
-            <!--NAVIGATION-->
-            <nav>
-                <!--BEGIN HAMBURGER MENU-->
-                <div class="hamburger-menu-container">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <!--END HAMBURGER MENU-->
+            <!--END HAMBURGER MENU-->
 
-                <!--BEGIN NAV LINKS-->
-                <ul id="my-top-nav" class="main-nav hide-show">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="bands.html">Bands</a></li>
-                    <li><a href="equipment.html">Equipment</a></li>
-                </ul>
-                <!--END NAV LINKS-->
-            </nav>
+            <!--BEGIN NAV LINKS-->
+            <ul id="my-top-nav" class="main-nav hide-show">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="bands.html">Bands</a></li>
+              <li><a href="equipment.html">Equipment</a></li>
+            </ul>
+            <!--END NAV LINKS-->
+          </nav>
         </div>
-    </div>
-</header>
-<!--END HEADER-->
+      </div>
+    </header>
+    <!--END HEADER-->
 
     <!--BEGIN MAIN-CONTENT-->
     <main id="about-page-main-content">
-        <section id="about-taj-mcgraw">
-            <div class="container">
-                <h2>About Taj McGraw Studios</h2>
-                <h3>"Where the future belongs to unwritten songs..."</h3>
-                <img class="float-left" src="images/city-skyline.jpg" alt="Night-time Seattle Skyline featuring the Space Needle">
-                <p class="about">Taj McGraw Studios is a fully-functional all-analog home studio able to
-                    make professional recordings ready for radio play, iTunes, digital, CD, LP, and cassette formats.  A wide variety of tube amps, microphones, and outboard gear allow for a diversity of tone in your project, while being captured on one-inch 16 track format and mixed down to quarter-inch two track.  Master recordings are then digitized via Pro Tools, and can be uploaded instantly to the master house of your choice.</p>
+      <section id="about-taj-mcgraw">
+        <div class="container">
+          <h2>About Taj McGraw Studios</h2>
+          <h3>Where the future belongs to unwritten songs...</h3>
+          <div class="about-top-content">
+            <img
+              src="images/pnw-old-growth.jpg"
+              alt="Night-time Seattle Skyline featuring the Space Needle"
+            />
+            <div class="text-content">
+              <p>
+                Taj McGraw Studios is an all-analog home studio located in north
+                Seattle. We make radio-ready professional recordings for any
+                format including iTunes, CD, LP, and cassette.
+              </p>
+              <p>
+                The centerpiece of the studio is a
+                <a
+                  href="http://www.toftaudio.com"
+                  class="link-text"
+                  target="_blank"
+                  >Toft ATB 16</a
+                >, an analog board based on classic Trident Studios mixing
+                consoles. A wide variety of tube amps, microphones, and classic
+                outboard gear also allow for a range of tone for your project,
+                along with an upright grand piano, Hammond organ, and a
+                selection of guitars.
+              </p>
+              <p>
+                Songs are recorded on one-inch 16 track and mixed down to
+                quarter-inch two track. Final stereo recordings are then
+                digitized via Pro Tools and can be uploaded instantly to the
+                master house of your choice, along with providing you MP3 and
+                WAV files.
+              </p>
             </div>
-        </section>
-        <section id="how-it-works" class="clear">
-            <div class="container">
-                <h2>How It Works</h2>
-                <h3>"Come in around 11 and have a song around 7..."</h3>
-                <p>Taj McGraw Studios is available on weekends for full days of recording.  The preference is that one song is done per day, so it is best that your band have a solid idea of what the song is and how it goes.  Rhythm tracks (drums, bass, guitars) are laid down first, then vocals, percussion, and other flavors second.  This insures a great ‘live’ feel to the recording and makes your song sound more natural and organic.  Rates for this are $200 a day.  If any further overdubs are necessary, time can be made during the evenings, Monday through Friday for a quick session.</p>
-                <p>After the tracks are done, a draft mix will be completed.  Schedule time for the band to come in for a mixing session and complete the song.  It’s best for the band to participate so everyone is on the same page and everyone gets what they want out of the overall sound.  Mixing sessions are $100, and generally take place on weekends.  From there, draft MP3s are completed and distributed.  If there are additional changes, more mixing (within reason!) can be scheduled at no additional cost.</p>
-            </div>
-        </section>
-        <section id="options">
-            <div class="container">
-                <h2>Options</h2>
-                <p>If your band just wants to record at Taj McGraw and mix elsewhere, the day rate is the same, just can bring a thumb drive to extract the tracks from tape onto digital.</p>
-                <p>If you have a stereo recording you would like to put onto tape for analog treatment, which includes Hammer EQ and Manley ELOP outboard gear, that service runs $100.  For another $20, you get the tape.</p>
-            </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section id="how-it-works" class="clear">
+        <div class="container">
+          <h2>How It Works</h2>
+          <h3>Come in around 11 and have a song around 7...</h3>
+          <p>
+            Taj McGraw Studios is available on weekends for full days of
+            recording. The preference is that one song is done per day, with
+            rhythm tracks (drums, bass, guitars) laid down first, then vocals,
+            percussion, and other sounds second. This insures a great ‘live’
+            feel to the recording and makes your song sound more natural and
+            organic.
+          </p>
+          <p>
+            After the tracks are done, a draft mix will be completed. Schedule
+            time for the band to come in for a mixing session and complete the
+            song. It’s best for the band to participate so everyone is on the
+            same page and everyone gets what they want out of the overall sound.
+          </p>
+          <p>
+            From there, draft MP3s are completed and distributed. If there are
+            additional changes, more mixing (within reason!) can be scheduled.
+          </p>
+          <p>
+            Rates are very good, so feel free to contact me at
+            <span class="about-email"></span> for a quote.
+          </p>
+        </div>
+      </section>
+      <section id="options">
+        <div class="container">
+          <h2>More Options</h2>
+          <p>
+            If your band just wants to record at Taj McGraw and mix elsewhere,
+            you can bring a thumb drive to extract the tracks from tape onto
+            digital, via JoeCo analog to digital converter.
+          </p>
+          <p>
+            Also, if you have a stereo recording that you would like to give
+            more boost and analog treatment before mastering, we can run your
+            songs through a number of options from tape to Hammer EQ and Manley
+            ELOP outboard gear, along with a Burl B2 for final digital
+            conversion.
+          </p>
+          <p>
+            Rates vary per project based on number of songs, original format,
+            and equipment desired.
+          </p>
+          <p>Email me at <span class="about-email"></span> for a quote.</p>
+        </div>
+      </section>
     </main>
     <!--END MAIN-CONTENT-->
 
     <!--BEGIN FOOTER-->
     <footer>
-        <p>&copy;2017 Taj McGraw Studios</p>
+      <p><span>&copy;</span><span class="copy-date"></span></p>
     </footer>
     <!--END FOOTER-->
-</body>
+    <script src="js/date.js"></script>
+  </body>
 </html>
