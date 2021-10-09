@@ -1,93 +1,104 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description"
-          content="Taj McGraw Studios is a Recording and Production Studio located in Seattle, Washington which specializes in Analog Recording.  Come in at 11, have a song recorded by 7.">
-    <title>Taj McGraw Studios Home Page | Sound Engineering and Production Studio in Seattle</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Taj McGraw Studios is a Recording and Production Studio located in Seattle, Washington which specializes in Analog Recording.  Come in at 11, have a song recorded by 7."
+    />
+    <title>
+      Taj McGraw Studios Home Page | Sound Engineering and Production Studio in
+      Seattle
+    </title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--BEGIN HEADER-->
     <header>
-        <div class="container header-container">
-            <!--LOGO-->
-            <div class="left-side-header">
-                <h1><a id="logo" href="index.html">Taj McGraw Studios</a></h1>
-            </div>
-            <!--RIGHT-SIDE HEADER / NAVIGATION AND CONTACT-->
-            <div class="right-side-header">
-                <!--CONTACT-->
-                    <div class="contact-info-header">
-                        <p>Email: test@test.com</p>
-                    </div>
-                <!--NAVIGATION-->
-                    <nav>
-                        <!--BEGIN HAMBURGER MENU-->
-                        <div class="hamburger-menu-container">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div>
-                        <!--END HAMBURGER MENU-->
-
-                        <!--BEGIN NAV LINKS-->
-                        <ul id="my-top-nav" class="main-nav hide-show">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="bands.html">Bands</a></li>
-                            <li><a href="equipment.html">Equipment</a></li>
-                        </ul>
-                        <!--END NAV LINKS-->
-                    </nav>
-            </div>
+      <div class="container header-container">
+        <!--LOGO-->
+        <div class="left-side-header">
+          <h1><a id="logo" href="index.html">Taj McGraw Studios</a></h1>
+          <!--<img src="images/logo-2.png" alt="">-->
         </div>
+        <!--RIGHT-SIDE HEADER / NAVIGATION AND CONTACT-->
+        <div class="right-side-header">
+          <!--CONTACT-->
+          <div class="contact-info-header">
+            <p id="headerEmail"></p>
+          </div>
+          <!--NAVIGATION-->
+          <nav>
+            <!--BEGIN HAMBURGER MENU-->
+            <div class="hamburger-menu-container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <!--END HAMBURGER MENU-->
+
+            <!--BEGIN NAV LINKS-->
+            <ul id="my-top-nav" class="main-nav hide-show">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="bands.html">Bands</a></li>
+              <li><a href="equipment.html">Equipment</a></li>
+            </ul>
+            <!--END NAV LINKS-->
+          </nav>
+        </div>
+      </div>
     </header>
     <!--END HEADER-->
 
     <!--BEGIN MAIN-CONTENT-->
     <main id="home-page-main-content">
-        <section id="hero">
-            <div class="container hero-container">
-                <h2>Recording and Production Studio</h2>
-                <div class="button-area">
-                    <a href="bands.html">Bands</a>
-                    <a id="modalBtn" class="contact-link button" href="#contact">Contact</a>
-                </div>
-            </div>
+      <section id="hero">
+        <!--add the class container here-->
+        <div class="container hero-container">
+          <h2>Recording and Production Studio</h2>
+          <div class="button-area">
+            <a id="modalBtn" class="contact-link button" href="#contact"
+              >Contact</a
+            >
+            <a href="bands.html">Bands</a>
+          </div>
+        </div>
 
-            <!--BEGIN MODAL-->
-            <div id="simpleModal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="closeBtn">&times;</span>
-                        <h2>Contact Info</h2>
-                    </div>
-                    <div class="modal-body">
-                        <p>test@test.com</p>
-                    </div>
-                    <div class="modal-footer">
-                        <h3>Let's chat</h3>
-                    </div>
-                </div>
+        <!--BEGIN MODAL-->
+        <div id="simpleModal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="closeBtn">&times;</span>
+              <h2>Contact Info</h2>
             </div>
-            <!--END MODAL-->
-
-        </section>
+            <div class="modal-body">
+              <p id="modalEmail"></p>
+            </div>
+            <div class="modal-footer">
+              <h3>Let's chat</h3>
+            </div>
+          </div>
+        </div>
+        <!--END MODAL-->
+      </section>
     </main>
     <!--END MAIN-CONTENT-->
 
     <!--BEGIN FOOTER-->
     <footer>
-        <p>&copy;2017 Taj McGraw Studios</p>
+      <p><span>&copy;</span><span class="copy-date"></span></p>
     </footer>
     <!--END FOOTER-->
     <script src="js/modal.js"></script>
-</body>
+    <script src="js/date.js"></script>
+  </body>
 </html>
